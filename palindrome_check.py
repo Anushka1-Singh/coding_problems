@@ -1,3 +1,4 @@
+# number palindrome check
 num =int(input('enter a no. : '))
 original=num
 reverse =0
@@ -10,6 +11,7 @@ if original==reverse:
 else:
     print('not a palindrome')
 
+# check string palindrome
 text = input ('enter a word:')
 if text == text[::-1]:
     print('palindrome')
