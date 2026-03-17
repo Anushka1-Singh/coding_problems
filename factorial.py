@@ -5,3 +5,8 @@ while num>0:
     num=num-1
 print(f)
 
+num1=int(input('enter a no. : '))
+f1=1
+for i in range(1,num+1):
+    f1=f1*i
+print(f1) 
