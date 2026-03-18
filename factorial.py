@@ -10,4 +10,11 @@ f1=1
 for i in range(1,num1+1):
     f1=f1*i
 print(f1) 
+
 # factorial using recursion
+def factorial(n):
+    if n==0 or n==1:
+        return 1                # base case
+    return n*factorial(n-1)     # recursive case
+n=int(input('enter a number : '))
+factorial(n)
