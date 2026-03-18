@@ -28,3 +28,15 @@ else:
 
         count+=1
         
+# recursion based fibonacci sequence
+def fibonacci(n):
+    # base cases
+    if n==0:
+        return 0
+    elif n==1:
+        return 1
+    # recursive case
+    return fibonacci(n-1)+fibonacci(n-2)
+terms=10
+for i in range(terms):
+    print(fibonacci(i),end='')
