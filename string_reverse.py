@@ -45,3 +45,8 @@ while i>=0:
     reversed_s3 += s3[i]
     i -= 1
 print(reversed_s3,'using while loop')
+
+#slicing
+s4='rohit'
+reversed_s4=s4[::-1]
+print(reversed_s4,'using slicing')
