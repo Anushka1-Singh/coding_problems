@@ -26,3 +26,12 @@ test_cases = [
 for test in test_cases:
     result = reverse_string(test)
     print(f"Input: '{test}' -> Output: '{result}'")
+
+
+s1 = 'rohit'
+reversed_s1 =reversed(s1)   #give you characters in reverse… but only when you ask for them one by one”
+print(reversed_s1)          # reversed_s1 : An iterator is an object that produces items one at a time, on demand, instead of storing them all at once.
+
+s2 = "rohit"
+for char in reversed(s2):
+    print(char, end='')
