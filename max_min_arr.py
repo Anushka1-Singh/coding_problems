@@ -8,6 +8,6 @@ def min_max(arr):
         elif x>maximum:
             maximum=x
     return minimum, maximum
-data=[64,34,25,12,22,11,90]
-low,high=min_max(data)
+arr=[64,34,25,12,22,11,90]
+low,high=min_max(arr)
 print(f"min:{low},max:{high}")
