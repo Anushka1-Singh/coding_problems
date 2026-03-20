@@ -23,3 +23,7 @@ def bubble_sort_min_max(arr):
 data=[64,34,25,12,22,11,90]
 low,high=bubble_sort_min_max(data)
 print(f'Min: {low}, Max:{high}')
+
+# built in function
+data1=[64,34,25,12,22,11,90]
+print(f'Min: {min(data1)}, Max: {max(data1)}')
