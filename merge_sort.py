@@ -29,3 +29,21 @@ print('hi your result',result)
 
 #merged.extend(arr1[i:]) → arr1[3:] → []
 #merged.extend(arr2[j:]) → arr2[2:] → [6]
+
+
+
+def bubble_sort(arr):
+    n=len(arr)
+    for i in range(n):
+        for j in range(0,n-i-1):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+    return arr
+arr3=[5,2,8]
+arr4=[1,9,3]
+arr3=bubble_sort(arr3)
+arr4=bubble_sort(arr4)
+merged=arr3+arr4
+merged=bubble_sort(merged)
+print('merged sort array : ', merged)
+
