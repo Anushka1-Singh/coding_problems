@@ -1,8 +1,8 @@
 def merge_sort(arr1,arr2):
     i,j=0,0
     merged=[]
-    while i<len(arr1) and j<len(arr2):
-        if arr1[i]<arr2[j]:
+    while i<len(arr1) and j<len(arr2):       # loop stops after : 3<3 and 2<3, still elements are left so we use merge.extend 
+        if arr1[i]<arr2[j]:                  # merge.extend to add remaining elements
             merged.append(arr1[i])
             i +=1
         else:
