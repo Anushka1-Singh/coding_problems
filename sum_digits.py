@@ -22,7 +22,7 @@ def sum_digit(n):
     return n%10 + sum_digit(n//10)
 n = 456
 print('recursion based sum of digits',sum_digit(n))
-
+# function call ( call stack builds)
 # sum_digit(456)
 # = 456 % 10 + sum_digit(456//10)
 # = 6 + sum_digit(45)
@@ -34,3 +34,8 @@ print('recursion based sum of digits',sum_digit(n))
 # = 4 + sum_digit(0)
 # = sum_digit(0)
 # = 0 -> base case reached
+# returning back - stack unwinds
+# sum_digit(0)=0
+# sum_digit(4) = 4+0 = 0
+# sum_digit(45) = 5+9 = 14
+# sum_digit(456) = 6+9 = 15
