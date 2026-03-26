@@ -44,7 +44,7 @@ def are_anagram(str1,str2):
 test_pairs =[
     ('listen','silent'),
     ('hello','world'),
-    ('astronomer','moon starer')
+    ('astronomer','moon starer'),
     ('abc','ab'),
     ('dormitory','dirty room',)
 ]
