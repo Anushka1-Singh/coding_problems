@@ -28,3 +28,26 @@ else:
             print("anagram")
         else:
             print("not anagram")
+
+# OR 
+def are_anagram(str1,str2):
+    # remove spaces and convert to lower case
+    str1=str1.replace(" ","").lower()
+    str2=str2.replace(" ","").lower()
+    
+    # must have equal lengths to be anagrams
+    if len(str1) != len(str2):
+        return False
+    # compare character frequency counts
+    return sorted(str1)==sorted(str2)
+# test cases
+test_pairs =[
+    ('listen','silent'),
+    ('hello','world'),
+    ('astronomer','moon starer')
+    ('abc','ab'),
+    ('dormitory','dirty room',)
+]
+for sh1,sh2 in test_pairs:
+    result=are_anagram(sh1,sh2)
+    print(f'"{s1}"&"{s2}" -> {" anagram" if result else" not an anagram"}')
