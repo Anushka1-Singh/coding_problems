@@ -1,3 +1,14 @@
+# write a program in python that counts the number of words in a sentence
+sentence1 = "she is a girl"
+if sentence1 == "":
+    print("empty sentence")
+else:
+    count_ = 1
+    for ch_ in sentence1:
+        if ch_ == " ":
+            count_ += 1
+    print(count_)   # ← correctly inside else
+
 sentence = "  she  is  a  girl  "
 if sentence == "":
     print("empty sentence")
