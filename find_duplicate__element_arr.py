@@ -1,4 +1,5 @@
-# write a program to find all duplicate elements in an array
+# write a program to find all duplicate elements in an 
+print("nested loops")
 arr=[10,20,30,20,40,10,50]
 duplicates=[]
 for i in range(len(arr)):
@@ -26,3 +27,23 @@ print('duplicate elements: ',duplicates)
 # i=4, j=i+2 => j=6, arr[i]==arr[j]=> arr[4]==arr[6]=> 40==50 => false , skip
 # i=5, j=i+1 => j=6, arr[i]==arr[j]=> arr[5]==arr[6]=> 10==50 => false , skip
 # i=6 => no j loop (because j starts from i+1 and no elements left)
+print("using dictionary")
+arr1=[10,20,30,20,40,10,50]
+freq={}
+duplicate=[]
+for num in arr1:
+    if num in freq:
+        freq[num] += 1
+    else:
+        freq[num]=1
+print(freq)
+for key in freq:
+    if freq[key]>1:
+        duplicate.append(key)
+print(duplicate)
+#for key in freq:
+#👉 gives only keys (like 10, 20, 30...)
+#freq[key]
+#👉 fetches the value (frequency)
+
+
